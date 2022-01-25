@@ -1,0 +1,35 @@
+* {
+    font-family: "FreeMono", monospace;
+    margin: 10px 0px;
+    padding: 0px 20px;
+}
+
+h1 {
+    font-size: 80px;
+    color: cyan;
+    background-color: black;
+    text-align: left;
+    font-weight: bold;
+}
+.My {
+    color: white;
+    padding: 0px;
+}
+h2 {
+    font-size: 30px;
+    color: white;
+    background-color: rebeccapurple;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+}
+h3 {
+    height: 30px;
+    font-size: 20px;
+    color: black;
+    background-color: lightskyblue;
+    text-align: right;
+    text-decoration: underline;
+    font-weight: 100;
+    
+}
