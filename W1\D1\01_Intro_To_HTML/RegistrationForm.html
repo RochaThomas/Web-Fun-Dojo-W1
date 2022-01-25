@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/process" method="post">
+        <div>
+            <label for="firstName">First Name:* </label>
+            <input type="text" name="firstName" id="firstName">
+            <!-- use camel casing in HTML, CSS, and JavaScript -->
+            <!-- Snake casing is used in Python -->
+        </div>
+        <div>
+            <label for="lastName">Last Name:* </label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="emailAddr">Email Address:* </label>
+            <input type="text" name="emailAddr" id="emailAddr">
+            <!-- type email would provide some slight validation -->
+        </div>
+        <div>
+            <label for="password">Password:* </label>
+            <input type="password" name="password" id="password">
+            <!-- type password hides password as you type -->
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password:* </label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+        </div>
+        <div>
+            <label for="dob">Birthday: </label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div>
+            <label>Gender Identity:</label>
+            <br>
+            <!-- not supposed to use breaks unless it's in text but the other alternative is using p tags which messes up the format or using a div but you aren't supposed to use a div for only one child -->
+            <!-- for radio: all options should share same name but value, id, and for are unique to the option -->
+            <input type="radio" name="gender" value="Male" id="Male">
+            <label for="Male">Male</label>
+            <!-- it's good to leave space for your code to be readable -->
+
+            <input type="radio" name="gender" value="Female" id="Female">
+            <label for="Female">Female</label>
+
+            <input type="radio" name="gender" value="Non-binary" id="Non-binary">
+            <label for="Non-binary">Non-binary</label>
+
+            <input type="radio" name="gender" value="preferNotAnswer" id="preferNotAnswer">
+            <label for="preferNotAnswer">I prefer not to answer</label>
+        </div>
+        <div>
+            <label for="descript">A short description about myself: </label>
+            <br>
+            <!-- again, typically you aren't supposed to use breaks -->
+            <textarea name="descript" id="descript" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            <label for="lang">Favorite Language: </label>
+            <select name="lang" id="lang">
+                <!-- value is what gets submitted to the database, text inbetween the tags is shown in the drop down -->
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="getUpdates" value="yes" id="getUpdates">
+            <label for="getUpdates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account">
+        </div>
+        <p>* Indicates a required field</p>
+    </form>
+</body>
+</html>
