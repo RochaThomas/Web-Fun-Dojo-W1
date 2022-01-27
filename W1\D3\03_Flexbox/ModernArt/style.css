@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(70,70,70);
+
+}
+#canvas {
+    background-color: black;
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.thick {
+    height: 425px;
+}
+.left {
+    flex-grow: 1;
+    flex-basis: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.right {
+    flex-grow: 4;
+    flex-basis: 500px;
+    background-color: red;
+}
+.white-vertical {
+    background-color: white;
+    width: 100px;
+}
+.top{
+    flex: 3;
+}
+.bottom{
+    flex: 4;
+}
+.blue {
+    flex-grow: 1;
+    background-color: blue;
+}
